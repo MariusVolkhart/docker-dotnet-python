@@ -3,3 +3,4 @@ RUN apt-get update \
     && apt-get install -y \
         python3 \
     && rm -rf /var/lib/apt/lists/*
+RUN mkdir /.dotnet && chmod a+rw /.dotnet

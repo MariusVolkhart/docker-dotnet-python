@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1
+RUN mkdir /.dotnet && chmod a+rw /.dotnet
 
 
 # ensure local python is preferred over distribution python
