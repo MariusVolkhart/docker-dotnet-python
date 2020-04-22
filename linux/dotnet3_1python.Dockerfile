@@ -10,7 +10,7 @@ RUN apt-get update \
     && chown root:root /etc/apt/sources.list.d/microsoft-prod.list \
     && apt-get install apt-transport-https -y \
     && apt-get update \
-    && apt-get install dotnet-sdk-3.1 -y \
+    && apt-get install dotnet-sdk-2.1 dotnet-sdk-3.1 -y \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["bash"]
