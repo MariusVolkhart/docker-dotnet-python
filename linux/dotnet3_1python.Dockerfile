@@ -1,5 +1,4 @@
 FROM python:3.8.2-slim
-RUN mkdir /.dotnet && chmod a+rw /.dotnet
 
 RUN apt-get update \
     && apt-get install wget gpg -y \
